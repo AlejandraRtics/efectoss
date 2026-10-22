@@ -1,0 +1,23 @@
+#boton {
+background: #d34bb6;
+transition: background .3s ease, transform .3s ease;
+}
+#botonhover:hover {
+background: #7e0a0f;
+transform: translateY(-3px);
+box-shadow: 0 6px 14px rgba(211, 25, 25, 0.35);
+}
+@keyframes aparecer {
+from { opacity:0; transform:translateY(20px); }
+to { opacity:1; transform:translateY(0); }
+}
+.tarjeta {
+animation: aparecer .6s ease-out;
+}
+@keyframes pulso {
+0%, 100% { transform:scale(1); }
+50% { transform:scale(1.06); }
+}
+.tarjet {
+animation: pulso 1.5s ease-in-out infinite;
+}
